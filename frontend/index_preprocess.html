@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>Js Crowd Session Frontend App</title>
+    <meta name="viewport" content="width=device-width , height=device-height,  initial-scale=1.0, user-scalable=no, user-scalable=0">
+    <!-- @if APP_ENV='DEV' -->
+    <!-- css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="app/styles/css/app.css" />
+    <!-- end -->
+    <!-- script -->
+    <!-- bower:js -->
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+    <script src="app/modules/app.module.js"></script>
+    <script src="app/modules/app.routes.js"></script>
+    <script src="app/modules/public/catalog/service.js"></script>
+    <script src="app/modules/public/catalog/controller.js"></script>
+    <!-- end -->
+    <!-- @endif -->
+    <!-- @if APP_ENV='PROD' -->
+    <!-- css --> 
+    <!-- bower:css -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="app/styles/app.min.css" />
+    <!-- end -->
+    <!-- script -->
+    <!-- bower:js -->
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+    <script src="app/scripts/app.min.js"></script>
+    <!-- end -->
+    <!-- @endif -->
+</head>
+
+<body ng-app="JSCrowdSession" ng-cloak>
+    <ui-view></ui-view>
+</body>
+
+</html>

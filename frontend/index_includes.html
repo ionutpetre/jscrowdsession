@@ -1,0 +1,34 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>Js Crowd Session Frontend App</title>
+    <meta name="viewport" content="width=device-width , height=device-height,  initial-scale=1.0, user-scalable=no, user-scalable=0">
+    <!-- @if APP_ENV='DEV' -->
+    <!-- css -->
+    include "vendor_deps_css.html" 
+    include "app_dev_deps_css.html"
+    <!-- end -->
+    <!-- script -->
+    include "vendor_deps_js.html"
+    include "app_dev_deps_js.html"
+    <!-- end -->
+    <!-- @endif -->
+    <!-- @if APP_ENV='PROD' -->
+    <!-- css --> 
+    include "vendor_deps_css.html" 
+    include "app_prod_deps_css.html"
+    <!-- end -->
+    <!-- script -->
+    include "vendor_deps_js.html" 
+    include "app_prod_deps_js.html"
+    <!-- end -->
+    <!-- @endif -->
+</head>
+
+<body ng-app="JSCrowdSession" ng-cloak>
+    <ui-view></ui-view>
+</body>
+
+</html>

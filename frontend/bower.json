@@ -1,0 +1,24 @@
+{
+  "name": "jscrowdsession-frontend-bower",
+  "version": "1.0.0",
+  "description": "Js Crowd Session Demo",
+  "authors": [
+    "ionut.petre@ro.ibm.com"
+  ],
+  "license": "IBM",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  },
+  "dependencies": {
+    "angular": "^1.6.0",
+    "bootstrap": "^3.3.7",
+    "angular-ui-router": "^0.3.2"
+  },
+  "devDependencies": {}
+}
